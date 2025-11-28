@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TEB – Rekrutacja</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- GÓRNY BANER INFORMACYJNY -->
+  <div class="top-banner">
+    Szybki START w naszej szkole — rozpocznij naukę już w styczniu!
+    <a href="#" class="banner-btn">Dowiedz się więcej</a>
+  </div>
+
+  <!-- NAVIGATION -->
+  <header class="nav-bar">
+    <div class="nav-left">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmy3ddF-lB87U4j1QR-q7SPjr72wxlNLnVfA&s    " class="logo" alt="Logo TEB Edukacja" />
+    </div>
+    <nav class="nav-menu">
+      <a href="#" data-page="home" class="active">Czego chcesz się uczyć?</a>
+      <a href="#" data-page="about">Poznaj nas</a>
+      <a href="#" data-page="enroll">Zapisy</a>
+      <a href="#" data-page="promo">Promocje</a>
+      <a href="#" data-page="contact">Kontakt</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- STRONA GŁÓWNA -->
+    <section id="home" class="page active">
+
+      <section class="hero">
+        <div class="hero-left">
+          <img src="https://teb.pl/wp-content/uploads/2024/08/teb_logo.png" class="hero-logo" alt="TEB Edukacja Logo" />
+          <h2 class="hero-title">TEB Edukacja</h2>
+          <div class="hero-text">
+            <h1>Rekrutacja nadal trwa!</h1>
+            <p>Poznaj najlepsze szkoły, kierunki i szkolenia. Zapisy już trwają!</p>
+            <div class="hero-buttons">
+              <a href="#" class="btn-yellow">Sprawdź ofertę</a>
+              <a href="#" class="btn-outline">Zapisz się</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <img
+            src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=500&q=80"
+            alt="Osoba"
+          />
+        </div>
+      </section>
+
+      <section class="benefits">
+        <div class="benefit-item">★<br />Możesz zdobyć zawód nawet w 1 rok</div>
+        <div class="benefit-item">★<br />60% zajęć praktycznych</div>
+        <div class="benefit-item">★<br />Zatrudniamy praktyków</div>
+        <div class="benefit-item">★<br />Staże i oferty pracy dla najlepszych absolwentów</div>
+        <div class="benefit-item">★<br />3 tryby kształcenia: dzienny, wieczorowy, weekendowy</div>
+      </section>
+
+    </section>
+
+    <!-- PODSTRONA: Poznaj nas -->
+    <section id="about" class="page">
+      <h2>Poznaj nas</h2>
+      <p>Jesteśmy nowoczesną szkołą policealną oferującą szeroki wybór kierunków i szkoleń, dostosowanych do potrzeb rynku pracy.</p>
+      <p>Nasza kadra to doświadczeni praktycy, którzy pomagają zdobyć realne umiejętności i przygotować się do pracy w zawodzie.</p>
+      <p>Oferujemy nowoczesne laboratoria, pracownie i sprzęt umożliwiający naukę praktycznych umiejętności od pierwszego dnia zajęć.</p>
+      <p>Dzięki współpracy z firmami z branży, nasi studenci mają szansę odbywać staże, praktyki i znaleźć zatrudnienie po ukończeniu szkoły.</p>
+      <p>W naszej szkole panuje przyjazna atmosfera, a nauczyciele są gotowi służyć wsparciem na każdym etapie edukacji.</p>
+      <p>Organizujemy warsztaty, spotkania branżowe i wydarzenia edukacyjne, aby uczniowie mieli kontakt z rynkiem pracy już podczas nauki.</p>
+    </section>
+
+    <!-- PODSTRONA: Zapisy -->
+    <section id="enroll" class="page">
+      <h2>Zapisy</h2>
+      <p>Zapisy są otwarte! Dołącz do nas i rozpocznij swoją edukacyjną przygodę już dziś.</p>
+      <p>Możesz wybrać tryb dzienny, wieczorowy lub weekendowy w zależności od Twoich potrzeb i możliwości czasowych.</p>
+      <p>Wszystkie kierunki oferują połączenie teorii z praktyką, dzięki czemu szybko zdobędziesz kompetencje niezbędne w pracy.</p>
+      <p>Nie zwlekaj, ilość miejsc jest ograniczona. Wypełnij formularz i zarezerwuj swoje miejsce już teraz!</p>
+      <form class="enroll-form" action="#" method="post">
+        <label for="name">Imię i nazwisko:</label><br />
+        <input type="text" id="name" name="name" required /><br /><br />
+
+        <label for="email">E-mail:</label><br />
+        <input type="email" id="email" name="email" required /><br /><br />
+
+        <label for="course">Wybierz kierunek:</label><br />
+        <select id="course" name="course" required>
+          <option value="">-- Wybierz --</option>
+          <option value="technik-informatyk">Technik informatyk</option>
+          <option value="opiekun-medyczny">Opiekun medyczny</option>
+          <option value="kucharz">Kucharz</option>
+          <option value="elektryk">Elektryk</option>
+        </select><br /><br />
+
+        <button type="submit" class="btn-yellow">Wyślij zgłoszenie</button>
+      </form>
+    </section>
+
+    <!-- PODSTRONA: Promocje -->
+    <section id="promo" class="page">
+      <h2>Promocje</h2>
+      <p>Aktualnie oferujemy różne promocje dla naszych studentów:</p>
+      <ul>
+        <li>Rabat 10% na naukę w trybie weekendowym.</li>
+        <li>Zniżka dla grup powyżej 3 osób.</li>
+        <li>Program lojalnościowy dla absolwentów szkoły.</li>
+        <li>Darmowe materiały edukacyjne dla pierwszych 50 zapisanych.</li>
+        <li>Specjalne stypendia dla wyróżniających się uczniów.</li>
+      </ul>
+      <p>Zachęcamy do kontaktu w celu poznania wszystkich aktualnych promocji.</p>
+    </section>
+
+    <!-- PODSTRONA: Kontakt -->
+    <section id="contact" class="page">
+      <h2>Kontakt</h2>
+      <p>Telefon: 123 456 789</p>
+      <p>Email: kontakt@teb-edu.pl</p>
+      <p>Adres: Ul. Edukacji 12, 00-000 Warszawa</p>
+      <p>Zapraszamy do odwiedzenia naszej szkoły i poznania oferty edukacyjnej na miejscu.</p>
+      <p>Nasza sekretariat jest czynny od poniedziałku do piątku w godzinach 8:00 – 16:00.</p>
+      <form class="contact-form" action="#" method="post">
+        <label for="contact-name">Imię i nazwisko:</label><br />
+        <input type="text" id="contact-name" name="contact-name" required /><br /><br />
+
+        <label for="contact-email">E-mail:</label><br />
+        <input type="email" id="contact-email" name="contact-email" required /><br /><br />
+
+        <label for="message">Wiadomość:</label><br />
+        <textarea id="message" name="message" rows="5" required></textarea><br /><br />
+
+        <button type="submit" class="btn-yellow">Wyślij wiadomość</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

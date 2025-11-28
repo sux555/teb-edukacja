@@ -1,0 +1,296 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background: #fff;
+  color: #00337a;
+}
+
+/* GÓRNY BANER */
+.top-banner {
+  background: #dff2d3;
+  color: #2d4d1c;
+  padding: 12px;
+  text-align: center;
+  font-size: 17px;
+}
+
+.banner-btn {
+  background: #2e7d32;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 6px;
+  margin-left: 10px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.banner-btn:hover {
+  background-color: #235923;
+}
+
+/* NAVIGATION */
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 40px;
+  align-items: center;
+  background: white;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.logo {
+  height: 55px;
+}
+
+.nav-menu a {
+  margin: 0 15px;
+  color: #00337a;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.nav-menu a:hover {
+  color: #0051c7;
+}
+
+.nav-menu a.active {
+  color: #0051c7;
+  font-weight: 700;
+  border-bottom: 2px solid #0051c7;
+}
+
+/* HERO - ZMIANY W POZYCJONOWANIU TEKSTU */
+.hero {
+  background: #0043a4;
+  height: 500px;
+  display: flex;
+  align-items: flex-start; /* tekst u góry */
+  color: white;
+  padding: 20px 60px 60px 20px; /* mniejszy padding z lewej i góry */
+  position: relative;
+  overflow: hidden;
+  gap: 40px;
+}
+
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  animation: fadeInLeft 1s ease forwards;
+  margin-top: 10px;
+}
+
+.hero-logo {
+  width: 100px;
+  margin-bottom: 5px;
+}
+
+.hero-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.hero-text {
+  max-width: 600px;
+  animation: fadeInRight 1s ease forwards;
+  margin-top: 0;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn-yellow {
+  background: #ffca28;
+  padding: 12px 24px;
+  border-radius: 8px;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-yellow:hover {
+  background-color: #ddb71e;
+}
+
+.btn-outline {
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: 2px solid white;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-outline:hover {
+  background-color: white;
+  color: #0043a4;
+}
+
+.hero-image {
+  margin-top: 80px; /* obrazek przesunięty w dół */
+}
+
+.hero-image img {
+  height: 350px;
+  border-radius: 12px;
+  animation: fadeInRight 1s ease forwards;
+}
+
+/* BENEFITS */
+.benefits {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 10px;
+  background: #fff;
+  color: #00337a;
+  font-size: 17px;
+  text-align: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.benefit-item {
+  width: 18%;
+  padding: 10px;
+  font-weight: 600;
+  user-select: none;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+/* PODSTRONY */
+.page {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  padding: 40px 60px;
+  min-height: 400px;
+}
+
+.page.active {
+  display: block;
+  opacity: 1;
+}
+
+/* FORMULARZE */
+form {
+  max-width: 400px;
+  margin-top: 20px;
+}
+
+input[type='text'],
+input[type='email'],
+select,
+textarea {
+  width: 100%;
+  padding: 8px 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  resize: vertical;
+}
+
+input[type='text']:focus,
+input[type='email']:focus,
+select:focus,
+textarea:focus {
+  border-color: #0043a4;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+.enroll-form button,
+.contact-form button {
+  background-color: #ffca28;
+  color: black;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.enroll-form button:hover,
+.contact-form button:hover {
+  background-color: #ddb71e;
+}
+
+/* ANIMACJE */
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* RESPONSYWNOŚĆ */
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+  .hero-left,
+  .hero-text {
+    align-items: center;
+    text-align: center;
+  }
+  .hero-image img {
+    height: 280px;
+    margin-top: 20px;
+  }
+  .benefits {
+    flex-direction: column;
+    align-items: center;
+  }
+  .benefit-item {
+    width: 80%;
+  }
+}
